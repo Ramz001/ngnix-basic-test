@@ -8,6 +8,7 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./logs/nginx:/var/log/nginx
       - ./nginx/503.html:/usr/share/nginx/html/503.html:ro
+      - ./assets:/usr/share/nginx/html/assets:ro
     depends_on:
       - app1
       - app2
